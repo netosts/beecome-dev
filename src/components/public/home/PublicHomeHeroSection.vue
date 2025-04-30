@@ -1,6 +1,6 @@
 <template>
   <section
-    class="pt-12 pb-20 md:py-20 bg-gradient-to-r from-yellow-400 to-yellow-600 text-gray-900"
+    class="pt-12 pb-20 md:py-20 bg-gradient-to-r from-yellow-400 to-yellow-600 text-gray-800"
   >
     <div class="container mx-auto px-4">
       <div class="flex flex-col lg:flex-row items-center">
@@ -8,7 +8,7 @@
           <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 font-quantico">
             Level Up Your Software Engineering Career
           </h1>
-          <p class="text-xl md:text-2xl mb-8 text-gray-900">
+          <p class="text-xl md:text-2xl mb-8">
             Structured learning paths and practical resources to help you reach mid-level engineer
             status and beyond.
           </p>

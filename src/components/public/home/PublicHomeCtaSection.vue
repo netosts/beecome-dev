@@ -13,7 +13,7 @@
       <svg
         viewBox="0 0 1200 120"
         preserveAspectRatio="none"
-        class="absolute bottom-0 w-full h-16 text-white transform"
+        class="absolute bottom-0 w-full h-16 text-gray-800 transform"
       >
         <path
           d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
@@ -24,26 +24,26 @@
 
     <div class="container mx-auto px-4 relative">
       <div class="max-w-4xl mx-auto text-center">
-        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
-          Ready to Level Up Your Career?
+        <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-800">
+          Ready to Beecome Mid-Level?
         </h2>
-        <p class="text-xl mb-8 text-yellow-100">
-          Join thousands of developers who have successfully transitioned from junior to mid-level
-          and beyond.
+        <p class="text-xl mb-8 text-white text-shadow-lg">
+          Join us now and start your successful journey transitioning from junior to mid-level and
+          beyond.
         </p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
           <button
-            class="bg-white cursor-pointer text-yellow-600 hover:bg-yellow-50 px-8 py-3 rounded-lg font-medium text-lg shadow-lg transition duration-300"
+            class="bg-white cursor-pointer text-yellow-600 px-8 py-3 rounded-lg font-medium text-lg shadow-lg transition duration-300"
           >
             Get Started for Free
           </button>
           <button
-            class="bg-transparent cursor-pointer border-2 border-white text-white hover:bg-white hover:text-yellow-600 px-8 py-3 rounded-lg font-medium text-lg transition duration-200"
+            class="bg-transparent shadow-lg text-shadow-lg hover:text-shadow-none cursor-pointer border-2 border-white text-white hover:bg-white hover:text-yellow-600 px-8 py-3 rounded-lg font-medium text-lg transition duration-200"
           >
             View Learning Paths
           </button>
         </div>
-        <p class="mt-6 text-sm text-yellow-100">
+        <p class="mt-6 text-sm text-white text-shadow-lg">
           No credit card required. Start with our free tier today.
         </p>
       </div>

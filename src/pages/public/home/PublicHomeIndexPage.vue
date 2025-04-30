@@ -6,7 +6,7 @@
 
     <PublicHomeSkillsSection :skills="keySkills" />
 
-    <PublicHomeTestimonialsSection :testimonials="testimonials" />
+    <!-- <PublicHomeTestimonialsSection :testimonials="testimonials" /> -->
 
     <PublicHomeCtaSection />
   </div>
@@ -23,7 +23,7 @@ import PublicHomeCtaSection from '@/components/public/home/PublicHomeCtaSection.
 import PublicHomeHeroSection from '@/components/public/home/PublicHomeHeroSection.vue'
 import PublicHomeLearningPathsSection from '@/components/public/home/PublicHomeLearningPathsSection.vue'
 import PublicHomeSkillsSection from '@/components/public/home/PublicHomeSkillsSection.vue'
-import PublicHomeTestimonialsSection from '@/components/public/home/PublicHomeTestimonialsSection.vue'
+// import PublicHomeTestimonialsSection from '@/components/public/home/PublicHomeTestimonialsSection.vue'
 import { ref } from 'vue'
 
 const learningPaths = ref([
@@ -96,30 +96,30 @@ const keySkills = ref([
   },
 ])
 
-const testimonials = ref([
-  {
-    id: 1,
-    name: 'Alex Johnson',
-    role: 'Frontend Developer at TechCorp',
-    content:
-      'This platform helped me transition from junior to mid-level in just 6 months. The structured learning paths and practical projects made all the difference.',
-    avatar: '/avatars/alex.jpg',
-  },
-  {
-    id: 2,
-    name: 'Maria Garcia',
-    role: 'Full Stack Developer at StartupX',
-    content:
-      'The system design and architecture sections were exactly what I needed to level up my skills. I now confidently lead technical discussions in my team.',
-    avatar: '/avatars/maria.jpg',
-  },
-  {
-    id: 3,
-    name: 'David Kim',
-    role: 'Backend Developer at FinTech Inc',
-    content:
-      'The focus on both technical skills and soft skills like code reviews and mentoring prepared me perfectly for my mid-level role.',
-    avatar: '/avatars/david.jpg',
-  },
-])
+// const testimonials = ref([
+//   {
+//     id: 1,
+//     name: 'Alex Johnson',
+//     role: 'Frontend Developer at TechCorp',
+//     content:
+//       'This platform helped me transition from junior to mid-level in just 6 months. The structured learning paths and practical projects made all the difference.',
+//     avatar: '/avatars/alex.jpg',
+//   },
+//   {
+//     id: 2,
+//     name: 'Maria Garcia',
+//     role: 'Full Stack Developer at StartupX',
+//     content:
+//       'The system design and architecture sections were exactly what I needed to level up my skills. I now confidently lead technical discussions in my team.',
+//     avatar: '/avatars/maria.jpg',
+//   },
+//   {
+//     id: 3,
+//     name: 'David Kim',
+//     role: 'Backend Developer at FinTech Inc',
+//     content:
+//       'The focus on both technical skills and soft skills like code reviews and mentoring prepared me perfectly for my mid-level role.',
+//     avatar: '/avatars/david.jpg',
+//   },
+// ])
 </script>
