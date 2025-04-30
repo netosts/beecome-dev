@@ -12,13 +12,6 @@
         ></path>
       </svg>
     </div>
-    <div
-      class="absolute z-0 inset-0 opacity-5 h-full bg-cover"
-      style="
-        background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NiIgaGVpZ2h0PSIxMDAiPgo8cmVjdCB3aWR0aD0iNTYiIGhlaWdodD0iMTAwIiBmaWxsPSIjZmZmZmZmIj48L3JlY3Q+CjxwYXRoIGQ9Ik0yOCA2NkwwIDUwTDAgMTZMMjggMEw1NiAxNkw1NiA1MEwyOCA2NkwyOCAxMDAiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2Y1OWUwYiIgc3Ryb2tlLXdpZHRoPSIyIj48L3BhdGg+CjxwYXRoIGQ9Ik0yOCAwTDI4IDM0TDAgNTBMMCA4NEwyOCAxMDBMNTYgODRMNTYgNTBMMjggMzQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2Y1OWUwYiIgc3Ryb2tlLXdpZHRoPSIyIj48L3BhdGg+Cjwvc3ZnPg==');
-        background-size: 56px 100px;
-      "
-    ></div>
     <div class="container relative z-20 mx-auto px-4 mt-20">
       <div class="text-center mb-12">
         <h2 class="text-3xl md:text-4xl font-bold mb-4">Structured Learning Paths</h2>
@@ -32,17 +25,17 @@
         <div
           v-for="path in props.paths"
           :key="path.id"
-          class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-100"
+          class="bg-gray-800 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden border border-gray-100"
         >
-          <div :class="`${path.color} h-2 w-full`"></div>
+          <!-- <div :class="`${path.color} h-2 w-full`"></div> -->
           <div class="p-6">
-            <div class="w-12 h-12 rounded-full bg-gray-100 flex items-center justify-center mb-4">
-              <svg-icon :name="path.icon" class="w-6 h-6 text-gray-700" />
+            <div class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center mb-4">
+              <component :is="path.icon" custom-class="w-10 text-yellow-300" />
             </div>
-            <h3 class="text-xl font-bold mb-2">{{ path.title }}</h3>
-            <p class="text-gray-600 mb-4">{{ path.description }}</p>
+            <h3 class="text-xl text-white font-bold mb-2">{{ path.title }}</h3>
+            <p class="text-gray-300 mb-4">{{ path.description }}</p>
             <button
-              class="text-emerald-600 font-medium flex items-center hover:text-emerald-700 transition-colors"
+              class="text-yellow-300 font-medium flex items-center hover:text-emerald-700 transition-colors"
             >
               Explore Path
               <svg
@@ -66,8 +59,6 @@
       </div>
     </div>
   </section>
-
-  <section class="py-16 bg-white"></section>
 </template>
 
 <script setup lang="ts">
@@ -76,7 +67,7 @@ const props = defineProps<{
     id: number
     title: string
     description: string
-    icon: string
+    icon: unknown
     color: string
   }[]
 }>()

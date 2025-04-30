@@ -1,15 +1,12 @@
 <template>
-  <header class="bg-gray-800 shadow">
+  <header class="bg-gray-800 shadow font-roboto">
     <div class="container mx-auto px-4">
       <div class="flex justify-between items-center h-16">
         <!-- Logo -->
         <div class="flex items-center">
-          <router-link
-            to="/"
-            class="flex items-center text-yellow-300 hover:text-yellow-600 transition-all duration-200"
-          >
-            <div>
-              <!-- Bee-themed logo -->
+          <router-link to="/" class="flex items-center transition-all duration-200">
+            <img src="/logo.png" alt="Logo" class="w-32" />
+            <!-- <div class="text-yellow-300">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
@@ -38,8 +35,11 @@
                 <path d="m14.5 9.5 2.5-2.5"></path>
                 <path d="M12 12v-2"></path>
               </svg>
-            </div>
-            <span class="ml-2 text-xl font-bold">{{ appLabel }}</span>
+            </div> -->
+            <span
+              class="ml-2 text-2xl font-bold font-dynapuff text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-yellow-600 hover:from-yellow-400 hover:to-yellow-700"
+              >{{ appLabel }}</span
+            >
           </router-link>
         </div>
 

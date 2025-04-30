@@ -1,8 +1,10 @@
 <template>
-  <section class="py-12 md:py-20 bg-gradient-to-r from-yellow-400 to-yellow-600 text-gray-900">
+  <section
+    class="pt-12 pb-20 md:py-20 bg-gradient-to-r from-yellow-400 to-yellow-600 text-gray-900"
+  >
     <div class="container mx-auto px-4">
-      <div class="flex flex-col md:flex-row items-center">
-        <div class="md:w-1/2 mb-10 md:mb-0">
+      <div class="flex flex-col lg:flex-row items-center">
+        <div class="lg:w-1/2 mb-16 md:mb-20 lg:mb-0">
           <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
             Level Up Your Software Engineering Career
           </h1>
@@ -10,9 +12,9 @@
             Structured learning paths and practical resources to help you reach mid-level engineer
             status and beyond.
           </p>
-          <div class="flex flex-col sm:flex-row gap-4">
+          <div class="flex flex-col lg:flex-row gap-4">
             <button
-              class="bg-gray-900 text-yellow-300 cursor-pointer px-6 py-3 rounded-lg font-medium text-lg shadow-lg transition duration-300 flex items-center justify-center"
+              class="bg-gray-800 text-yellow-300 cursor-pointer px-6 py-3 rounded-lg font-medium text-lg shadow-lg transition duration-300 flex items-center justify-center"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +34,7 @@
               Start Learning
             </button>
             <button
-              class="bg-transparent border-2 border-gray-900 hover:bg-gray-900 hover:text-yellow-300 cursor-pointer px-6 py-3 rounded-lg font-medium text-lg transition duration-200 flex items-center justify-center"
+              class="bg-transparent border-2 border-gray-800 hover:bg-gray-800 hover:text-yellow-300 cursor-pointer px-6 py-3 rounded-lg font-medium text-lg transition duration-200 flex items-center justify-center"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -53,7 +55,7 @@
             </button>
           </div>
         </div>
-        <div class="md:w-1/2 flex justify-center">
+        <div class="lg:w-1/2 flex justify-center">
           <div class="relative">
             <div class="absolute inset-0 bg-white opacity-10 rounded-lg transform rotate-6"></div>
             <div class="relative bg-gray-800 p-6 rounded-lg shadow-2xl">
@@ -65,7 +67,7 @@
                 </div>
                 <div class="ml-4 text-xs text-gray-400">career-roadmap.js</div>
               </div>
-              <pre class="text-yellow-300 font-mono text-sm overflow-x-auto">
+              <pre class="hidden sm:block text-yellow-300 font-mono text-sm overflow-x-auto">
 <code>const <span class="text-purple-400">careerPath</span> = {
   <span class="text-red-500">junior</span>: {
     skills: ['basics', 'coding', 'teamwork'],
@@ -82,6 +84,31 @@
   },
   <span class="text-red-500">senior</span>: {
     skills: ['architecture', 'strategy'],
+    experience: '5+ years'
+  }
+};</code>
+              </pre>
+              <pre class="block sm:hidden text-yellow-300 font-mono text-sm overflow-x-auto">
+<code>const <span class="text-purple-400">careerPath</span> = {
+  <span class="text-red-500">junior</span>: {
+    skills: [
+      'basics', 'coding', 'teamwork'
+    ],
+    experience: '0-2 years'
+  },
+  <span class="text-red-500">midLevel</span>: {
+    skills: [
+      'system design', 
+      'code quality',
+      'mentoring',
+      'technical leadership'
+    ],
+    experience: '2-5 years'
+  },
+  <span class="text-red-500">senior</span>: {
+    skills: [
+      'architecture', 'strategy'
+    ],
     experience: '5+ years'
   }
 };</code>

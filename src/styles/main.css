@@ -1,4 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import 'tailwindcss';
+
 @theme {
   --color-yellow-50: #fffbeb;
   --color-yellow-100: #fef3c7;
@@ -10,4 +12,11 @@
   --color-yellow-700: #b45309;
   --color-yellow-800: #92400e;
   --color-yellow-900: #78350f;
+
+  --font-roboto: 'Roboto', sans-serif;
+  --font-dynapuff: 'DynaPuff', system-ui;
+}
+
+body {
+  font-family: monospace;
 }

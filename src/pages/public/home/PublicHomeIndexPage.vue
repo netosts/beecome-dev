@@ -13,6 +13,12 @@
 </template>
 
 <script setup lang="ts">
+import IconBookOutline from '@/components/icons/IconBookOutline.vue'
+import IconCheckCircleOutline from '@/components/icons/IconCheckCircleOutline.vue'
+import IconCompassOutline from '@/components/icons/IconCompassOutline.vue'
+import IconPuzzleOutline from '@/components/icons/IconPuzzleOutline.vue'
+import IconStarOutline from '@/components/icons/IconStarOutline.vue'
+import IconUsersGroup from '@/components/icons/IconUsersGroup.vue'
 import PublicHomeCtaSection from '@/components/public/home/PublicHomeCtaSection.vue'
 import PublicHomeHeroSection from '@/components/public/home/PublicHomeHeroSection.vue'
 import PublicHomeLearningPathsSection from '@/components/public/home/PublicHomeLearningPathsSection.vue'
@@ -25,29 +31,29 @@ const learningPaths = ref([
     id: 1,
     title: 'Frontend Development',
     description: 'Master modern frontend frameworks and advanced UI/UX principles',
-    icon: 'layout',
-    color: 'bg-blue-500',
+    icon: IconCheckCircleOutline,
+    color: 'bg-yellow-600',
   },
   {
     id: 2,
     title: 'Backend Development',
     description: 'Build scalable APIs, microservices, and database architectures',
-    icon: 'server',
-    color: 'bg-green-500',
+    icon: IconCheckCircleOutline,
+    color: 'bg-yellow-600',
   },
   {
     id: 3,
     title: 'Full Stack Development',
     description: 'Combine frontend and backend skills to build complete applications',
-    icon: 'layers',
-    color: 'bg-purple-500',
+    icon: IconCheckCircleOutline,
+    color: 'bg-yellow-600',
   },
   {
     id: 4,
     title: 'DevOps',
     description: 'Learn CI/CD, containerization, and cloud infrastructure',
-    icon: 'git-branch',
-    color: 'bg-orange-500',
+    icon: IconCheckCircleOutline,
+    color: 'bg-yellow-600',
   },
 ])
 
@@ -56,37 +62,37 @@ const keySkills = ref([
     id: 1,
     title: 'System Design',
     description: 'Learn to design scalable and maintainable software architectures',
-    icon: 'compass',
+    icon: IconCompassOutline,
   },
   {
     id: 2,
     title: 'Code Quality',
     description: 'Master clean code principles, testing, and code reviews',
-    icon: 'check-circle',
+    icon: IconCheckCircleOutline,
   },
   {
     id: 3,
     title: 'Problem Solving',
     description: 'Develop advanced algorithmic thinking and debugging skills',
-    icon: 'puzzle',
+    icon: IconPuzzleOutline,
   },
   {
     id: 4,
     title: 'Team Collaboration',
     description: 'Effective communication and collaboration in development teams',
-    icon: 'users',
+    icon: IconUsersGroup,
   },
   {
     id: 5,
     title: 'Technical Leadership',
     description: 'Mentor junior developers and lead technical initiatives',
-    icon: 'star',
+    icon: IconStarOutline,
   },
   {
     id: 6,
     title: 'Continuous Learning',
     description: 'Stay updated with industry trends and new technologies',
-    icon: 'book-open',
+    icon: IconBookOutline,
   },
 ])
 
