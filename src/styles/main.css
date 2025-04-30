@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import 'tailwindcss';
 
 @theme {
@@ -15,8 +15,9 @@
 
   --font-roboto: 'Roboto', sans-serif;
   --font-dynapuff: 'DynaPuff', system-ui;
+  --font-quantico: 'Quantico', monospace;
 }
 
 body {
-  font-family: monospace;
+  font-family: 'Roboto', sans-serif;
 }

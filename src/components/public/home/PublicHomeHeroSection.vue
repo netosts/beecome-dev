@@ -5,7 +5,7 @@
     <div class="container mx-auto px-4">
       <div class="flex flex-col lg:flex-row items-center">
         <div class="lg:w-1/2 mb-16 md:mb-20 lg:mb-0">
-          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6 font-quantico">
             Level Up Your Software Engineering Career
           </h1>
           <p class="text-xl md:text-2xl mb-8 text-gray-900">
