@@ -15,6 +15,17 @@ const router = createRouter({
       component: () => import('@/pages/public/home/PublicHomeLearningPage.vue'),
       props: true,
     },
+    {
+      path: '/resources',
+      name: 'Resources',
+      component: () => import('@/pages/public/home/PublicHomeLearnPage.vue'),
+    },
+    {
+      path: '/resources/:category',
+      name: 'ResourceCategory',
+      component: () => import('@/pages/public/home/PublicHomeLearnPage.vue'),
+      props: true,
+    },
   ],
 })
 

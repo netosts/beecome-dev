@@ -1,10 +1,10 @@
 <template>
   <div>
-    <section class="py-12 bg-emerald-600 text-white">
+    <section class="py-12 bg-yellow-500 text-gray-900">
       <div class="container mx-auto px-4">
         <div class="max-w-4xl">
           <h1 class="text-3xl md:text-4xl font-bold mb-4">{{ path.title }}</h1>
-          <p class="text-xl text-emerald-100 mb-6">{{ path.description }}</p>
+          <p class="text-xl text-gray-800 mb-6">{{ path.description }}</p>
           <div class="flex flex-wrap gap-4">
             <div class="flex items-center">
               <svg
@@ -79,7 +79,7 @@
                 </div>
                 <div class="w-full bg-gray-200 rounded-full h-2.5">
                   <div
-                    class="bg-emerald-600 h-2.5 rounded-full"
+                    class="bg-yellow-500 h-2.5 rounded-full"
                     :style="`width: ${path.progress}%`"
                   ></div>
                 </div>
@@ -93,7 +93,7 @@
                   class="flex items-center"
                 >
                   <div
-                    :class="`w-6 h-6 rounded-full flex items-center justify-center mr-2 ${section.completed ? 'bg-emerald-100 text-emerald-600' : 'bg-gray-100 text-gray-400'}`"
+                    :class="`w-6 h-6 rounded-full flex items-center justify-center mr-2 ${section.completed ? 'bg-yellow-100 text-yellow-600' : 'bg-gray-100 text-gray-400'}`"
                   >
                     <svg
                       v-if="section.completed"
@@ -119,7 +119,7 @@
 
               <div class="mt-6">
                 <button
-                  class="w-full bg-emerald-600 hover:bg-emerald-700 text-white py-2 rounded-lg font-medium transition duration-300"
+                  class="w-full bg-yellow-500 hover:bg-yellow-600 text-gray-900 py-2 rounded-lg font-medium transition duration-300"
                 >
                   Continue Learning
                 </button>
@@ -132,8 +132,8 @@
             <div class="mb-8">
               <h2 class="text-2xl font-bold mb-4">About This Learning Path</h2>
               <p class="text-gray-700 mb-4">{{ path.longDescription }}</p>
-              <div class="bg-emerald-50 border border-emerald-100 rounded-lg p-4">
-                <h3 class="text-lg font-bold text-emerald-800 mb-2">What You'll Learn</h3>
+              <div class="bg-yellow-50 border border-yellow-100 rounded-lg p-4">
+                <h3 class="text-lg font-bold text-yellow-800 mb-2">What You'll Learn</h3>
                 <ul class="grid grid-cols-1 md:grid-cols-2 gap-2">
                   <li
                     v-for="(outcome, index) in path.learningOutcomes"
@@ -150,7 +150,7 @@
                       stroke-width="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      class="text-emerald-600 mr-2 mt-1"
+                      class="text-yellow-600 mr-2 mt-1"
                     >
                       <path d="M20 6 9 17l-5-5"></path>
                     </svg>
@@ -163,7 +163,7 @@
             <div v-for="(section, sectionIndex) in path.sections" :key="sectionIndex" class="mb-10">
               <h2 class="text-2xl font-bold mb-6 flex items-center">
                 <span
-                  class="w-8 h-8 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center mr-3 text-sm"
+                  class="w-8 h-8 rounded-full bg-yellow-100 text-yellow-800 flex items-center justify-center mr-3 text-sm"
                 >
                   {{ sectionIndex + 1 }}
                 </span>
