@@ -44,8 +44,7 @@
     <div
       :class="`${isSidebarOpen ? 'block' : 'hidden'} md:block md:w-64 lg:w-72 bg-white border-r border-gray-200 overflow-y-auto fixed md:sticky top-0 h-screen z-20`"
     >
-      <div class="p-4 border-b border-gray-200 flex items-center justify-between">
-        <h2 class="text-lg font-bold text-gray-900">Documentation</h2>
+      <div class="px-4 border-gray-200 flex items-center justify-between">
         <div class="md:hidden">
           <button @click="isSidebarOpen = false" class="text-gray-500 hover:text-yellow-500">
             <svg
@@ -101,7 +100,7 @@
     </div>
 
     <!-- Main Content -->
-    <div class="flex-1 md:ml-64 lg:ml-72">
+    <div class="flex-1 md:px-4">
       <div class="max-w-4xl mx-auto px-4 py-8">
         <!-- Loading state -->
         <div v-if="loading" class="flex justify-center items-center h-64">
