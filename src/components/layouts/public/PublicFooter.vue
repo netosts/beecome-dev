@@ -5,60 +5,43 @@
         <div>
           <h3 class="text-lg font-semibold mb-4">Beecome Dev</h3>
           <p class="text-gray-300">
-            Helping developers reach the mid-level and beyond through structured learning paths and
-            practical resources.
+            Helping developers reach the mid-level and beyond through structured fine articles and
+            practice projects.
           </p>
         </div>
 
         <div>
-          <h3 class="text-lg font-semibold mb-4">Learning Paths</h3>
+          <h3 class="text-lg font-semibold mb-4">Articles</h3>
           <ul class="space-y-2">
-            <li>
-              <router-link to="/learning-paths/frontend" class="text-gray-300 hover:text-yellow-400"
-                >Frontend Development</router-link
-              >
-            </li>
-            <li>
-              <router-link to="/learning-paths/backend" class="text-gray-300 hover:text-yellow-400"
-                >Backend Development</router-link
-              >
-            </li>
-            <li>
-              <router-link
-                to="/learning-paths/fullstack"
-                class="text-gray-300 hover:text-yellow-400"
-                >Full Stack Development</router-link
-              >
-            </li>
-            <li>
-              <router-link to="/learning-paths/devops" class="text-gray-300 hover:text-yellow-400"
-                >DevOps</router-link
-              >
+            <li v-for="(article, articleId) in articleModels" :key="articleId">
+              <router-link :to="article.path" class="text-gray-300 hover:text-yellow-400">{{
+                article.title
+              }}</router-link>
             </li>
           </ul>
         </div>
 
         <div>
-          <h3 class="text-lg font-semibold mb-4">Resources</h3>
+          <h3 class="text-lg font-semibold mb-4">Practice Projects</h3>
           <ul class="space-y-2">
             <li>
               <router-link to="/resources/articles" class="text-gray-300 hover:text-yellow-400"
-                >Articles</router-link
+                >Forum</router-link
               >
             </li>
             <li>
               <router-link to="/resources/tutorials" class="text-gray-300 hover:text-yellow-400"
-                >Tutorials</router-link
+                >Chat</router-link
               >
             </li>
             <li>
               <router-link to="/resources/projects" class="text-gray-300 hover:text-yellow-400"
-                >Practice Projects</router-link
+                >Task Manager</router-link
               >
             </li>
             <li>
               <router-link to="/resources/interviews" class="text-gray-300 hover:text-yellow-400"
-                >Interview Prep</router-link
+                >CI/CD Completo</router-link
               >
             </li>
           </ul>
@@ -176,6 +159,7 @@
 </template>
 
 <script setup lang="ts">
+import { articleModels } from '@/assets/articles'
 import { computed } from 'vue'
 
 const currentYear = computed(() => new Date().getFullYear())

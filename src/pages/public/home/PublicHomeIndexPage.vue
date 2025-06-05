@@ -2,7 +2,7 @@
   <div>
     <PublicHomeHeroSection />
 
-    <PublicHomeLearningPathsSection :paths="learningPaths" />
+    <PublicHomeLearningPathsSection :paths="articleModels" />
 
     <PublicHomeSkillsSection :skills="keySkills" />
 
@@ -13,6 +13,7 @@
 </template>
 
 <script setup lang="ts">
+import { articleModels } from '@/assets/articles'
 import IconBookOutline from '@/components/icons/IconBookOutline.vue'
 import IconCheckCircleOutline from '@/components/icons/IconCheckCircleOutline.vue'
 import IconCompassOutline from '@/components/icons/IconCompassOutline.vue'
@@ -25,37 +26,6 @@ import PublicHomeLearningPathsSection from '@/components/public/home/PublicHomeL
 import PublicHomeSkillsSection from '@/components/public/home/PublicHomeSkillsSection.vue'
 // import PublicHomeTestimonialsSection from '@/components/public/home/PublicHomeTestimonialsSection.vue'
 import { ref } from 'vue'
-
-const learningPaths = ref([
-  {
-    id: 1,
-    title: 'Frontend Development',
-    description: 'Master modern frontend frameworks and advanced UI/UX principles',
-    icon: IconCheckCircleOutline,
-    color: 'bg-yellow-600',
-  },
-  {
-    id: 2,
-    title: 'Backend Development',
-    description: 'Build scalable APIs, microservices, and database architectures',
-    icon: IconCheckCircleOutline,
-    color: 'bg-yellow-600',
-  },
-  {
-    id: 3,
-    title: 'Full Stack Development',
-    description: 'Combine frontend and backend skills to build complete applications',
-    icon: IconCheckCircleOutline,
-    color: 'bg-yellow-600',
-  },
-  {
-    id: 4,
-    title: 'DevOps',
-    description: 'Learn CI/CD, containerization, and cloud infrastructure',
-    icon: IconCheckCircleOutline,
-    color: 'bg-yellow-600',
-  },
-])
 
 const keySkills = ref([
   {

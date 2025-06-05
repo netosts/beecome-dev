@@ -46,24 +46,11 @@
         <!-- Navigation -->
         <nav class="hidden md:flex space-x-8">
           <router-link
-            to="/"
+            v-for="(item, itemId) in menuItems"
+            :key="itemId"
+            :to="item.path"
             class="text-yellow-300 hover:text-yellow-600 px-3 py-2 rounded-md text-sm font-medium transition-all duration-200"
-            >Home</router-link
-          >
-          <router-link
-            to="/learning-paths"
-            class="text-yellow-300 hover:text-yellow-600 px-3 py-2 rounded-md text-sm font-medium transition-all duration-200"
-            >Learning Paths</router-link
-          >
-          <router-link
-            to="/resources"
-            class="text-yellow-300 hover:text-yellow-600 px-3 py-2 rounded-md text-sm font-medium transition-all duration-200"
-            >Resources</router-link
-          >
-          <router-link
-            to="/about"
-            class="text-yellow-300 hover:text-yellow-600 px-3 py-2 rounded-md text-sm font-medium transition-all duration-200"
-            >About</router-link
+            >{{ item.label }}</router-link
           >
         </nav>
 
@@ -112,24 +99,11 @@
       <div v-if="isMenuOpen" class="md:hidden py-2">
         <div class="flex flex-col space-y-2">
           <router-link
-            to="/"
+            v-for="(item, itemId) in menuItems"
+            :key="itemId"
+            :to="item.path"
             class="text-yellow-300 hover:text-yellow-600 px-3 py-2 rounded-md text-sm font-medium transition-all duration-200"
-            >Home</router-link
-          >
-          <router-link
-            to="/learning-paths"
-            class="text-yellow-300 hover:text-yellow-600 px-3 py-2 rounded-md text-sm font-medium transition-all duration-200"
-            >Learning Paths</router-link
-          >
-          <router-link
-            to="/resources"
-            class="text-yellow-300 hover:text-yellow-600 px-3 py-2 rounded-md text-sm font-medium transition-all duration-200"
-            >Resources</router-link
-          >
-          <router-link
-            to="/about"
-            class="text-yellow-300 hover:text-yellow-600 px-3 py-2 rounded-md text-sm font-medium transition-all duration-200"
-            >About</router-link
+            >{{ item.label }}</router-link
           >
         </div>
       </div>
@@ -142,4 +116,23 @@ import { ref } from 'vue'
 import { label as appLabel } from '../../../../package.json'
 
 const isMenuOpen = ref(false)
+
+const menuItems = ref([
+  {
+    label: 'Home',
+    path: '/',
+  },
+  {
+    label: 'Articles',
+    path: '/articles',
+  },
+  {
+    label: 'Practice Projects',
+    path: '/practice',
+  },
+  {
+    label: 'About',
+    path: '/about',
+  },
+])
 </script>

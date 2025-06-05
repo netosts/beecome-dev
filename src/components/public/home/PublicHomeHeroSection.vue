@@ -9,7 +9,7 @@
             Level Up Your Software Engineering Career
           </h1>
           <p class="text-xl md:text-2xl mb-8">
-            Structured learning paths and practical resources to help you reach mid-level engineer
+            Structured fine articles and practice projects to help you reach mid-level engineer
             status and beyond.
           </p>
           <div class="flex flex-col lg:flex-row gap-4">

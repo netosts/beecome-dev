@@ -14,9 +14,9 @@
     </div>
     <div class="container relative z-20 mx-auto px-4 mt-20">
       <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4">Structured Learning Paths</h2>
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Articles</h2>
         <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          Follow our carefully designed learning paths to systematically build the skills needed for
+          Follow our carefully written articles to systematically build the skills needed for
           mid-level positions.
         </p>
       </div>
@@ -35,9 +35,9 @@
             <h3 class="text-xl text-white font-bold mb-2">{{ path.title }}</h3>
             <p class="text-gray-300 mb-4">{{ path.description }}</p>
             <button
-              class="text-yellow-300 font-medium flex items-center hover:text-emerald-700 transition-colors"
+              class="text-yellow-300 font-medium flex items-center hover:text-yellow-500 transition-colors cursor-pointer"
             >
-              Explore Path
+              Read Article
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"
@@ -68,7 +68,6 @@ const props = defineProps<{
     title: string
     description: string
     icon: unknown
-    color: string
   }[]
 }>()
 </script>
