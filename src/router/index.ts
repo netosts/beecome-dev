@@ -9,23 +9,23 @@ const router = createRouter({
       name: 'home',
       component: PublicHomeIndexPage,
     },
-    {
-      path: '/learning-paths',
-      name: 'LearningPaths',
-      component: () => import('@/pages/public/home/PublicHomeLearningPage.vue'),
-      props: true,
-    },
-    {
-      path: '/resources',
-      name: 'Resources',
-      component: () => import('@/pages/public/home/PublicHomeLearnPage.vue'),
-    },
-    {
-      path: '/resources/:category',
-      name: 'ResourceCategory',
-      component: () => import('@/pages/public/home/PublicHomeLearnPage.vue'),
-      props: true,
-    },
+    // {
+    //   path: '/learning-paths',
+    //   name: 'LearningPaths',
+    //   component: () => import('@/pages/public/home/PublicHomeLearningPage.vue'),
+    //   props: true,
+    // },
+    // {
+    //   path: '/resources',
+    //   name: 'Resources',
+    //   component: () => import('@/pages/public/home/PublicHomeLearnPage.vue'),
+    // },
+    // {
+    //   path: '/resources/:category',
+    //   name: 'ResourceCategory',
+    //   component: () => import('@/pages/public/home/PublicHomeLearnPage.vue'),
+    //   props: true,
+    // },
   ],
 })
 
