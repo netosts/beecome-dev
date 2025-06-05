@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div class="markdown-content" v-html="renderedContent"></div>
 </template>
 
@@ -109,4 +109,11 @@ const renderedContent = computed(() => {
 .markdown-content hr {
   @apply my-6 border-t border-gray-300;
 }
-</style>
+</style> -->
+<template>
+  <div>a</div>
+</template>
+
+<script setup lang="ts"></script>
+
+<style scoped></style>
