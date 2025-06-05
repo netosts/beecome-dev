@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div class="resources-sidebar">
     <div v-for="category in categories" :key="category.id" class="mb-6">
       <div
@@ -148,4 +148,11 @@ const loadTutorials = async (categoryId) => {
     loadingTutorials.value[categoryId] = false
   }
 }
-</script>
+</script> -->
+<template>
+  <div>a</div>
+</template>
+
+<script setup lang="ts"></script>
+
+<style scoped></style>
